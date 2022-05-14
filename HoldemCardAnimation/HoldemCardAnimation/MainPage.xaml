@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:HoldemCardAnimation.Controls"
+             x:Class="HoldemCardAnimation.MainPage" BackgroundColor="LawnGreen">
+    <StackLayout Orientation="Horizontal" RotationX="40" HorizontalOptions="Center">
+        <Grid>
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+            </Grid.GestureRecognizers>
+            <controls:Card x:Name="Card1" Number="5" Suit="DIAMOND" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </Grid>
+        <Grid>
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+            </Grid.GestureRecognizers>
+            <controls:Card x:Name="Card2" Number="4" Suit="DIAMOND" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </Grid>
+    </StackLayout>
+    
+</ContentPage>
